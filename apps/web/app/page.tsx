@@ -140,7 +140,7 @@ export default function Home() {
       ctx.textBaseline = "middle";
 
       ctx.createLinearGradient(0, 0, 100, 100);
-      ctx.fillText("SINESTH", centerXPos, centerYPos);
+      ctx.fillText("SYNsin", centerXPos, centerYPos);
 
       animationFrameId = requestAnimationFrame(draw);
     };
