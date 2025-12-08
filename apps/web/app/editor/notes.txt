@@ -1,0 +1,50 @@
+
+Ability to disable dTdX lines so they dont play audio, put an x image over them
+Convert Json File names to array for instruments to use
+Add ability to change instrument from dropdown (shadcn select)
+Make this look better
+allow instrument multiplay
+allow audio output equation
+allow graph overlap checkbox
+find replacement for html5 canvas
+make site look NOT outdated
+cover 2nd LATEX rendering issue (maybe use katex directly?)
+allow when hovering section of graph to show X & note (123, D4)
+allow COPY to clipboard for equations
+allow COPY of json array of notes and time stamps
+
+figure out constant instruments
+figure out why canvas draws weird when playing loop
+replace some components with shadcn ones for better look
+turn some of the stuff into components to clean up page.tsx
+organize codebase
+
+allow dragging of bar to set its position of X value dynamically, allow zoom in?
+
+
+
+SOURCES:
+https://developer.mozilla.org/en-US/
+https://ui.shadcn.com/docs/components/native-select
+https://documentation.decisions.com/docs/pre-defined-css-classes-for-forms
+https://github.com/arnog/react-mathlive/tree/main
+https://www.npmjs.com/package/react-latex-next?activeTab=readme
+https://mathjs.org/docs/expressions/expression_trees.html
+https://www.npmjs.com/package/soundfont-player
+
+STUFF:
+https://d3js.org/
+https://react-charts.tanstack.com/
+https://en.wikipedia.org/wiki/Marching_squares
+https://web.dev/articles/canvas-performance
+https://sketchpad.app/en/
+
+
+INSTRUMENTS: 
+https://gleitz.github.io/midi-js-soundfonts/FluidR3_GM/names.json
+https://gleitz.github.io/midi-js-soundfonts/MusyngKite/names.json
+https://gleitz.github.io/midi-js-soundfonts/FatBoy/names.json
+https://gleitz.github.io/midi-js-soundfonts/Tabla/names.json
+
+sadly enough, i kindof understand what im doing.  just a bit.
+i hate this

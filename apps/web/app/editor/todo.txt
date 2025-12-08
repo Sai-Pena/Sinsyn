@@ -1,0 +1,32 @@
+Todo: Simple Volume Editor (apps/web/app/editor/todo.txt)
+
+Goals
+- Replace current editor page with a lightweight Volume Editor.
+- Per-track volume + pan controls with realtime audio using WebAudio.
+- Simple, responsive UI with accessibility basics.
+
+Minimal tasks
+- [ ] New Editor layout: Track list + Inspector (Volume, Pan) + small visualizer.
+- [ ] Init AudioContext and route track -> GainNode -> StereoPannerNode -> master -> destination.
+- [ ] Per-track volume & Per-clip volume (new Eq) with dB readout and simple VU bar.
+- [ ] Per-track pan control (new eQ).
+- [ ] Preset: Default and -6dB. Save/recall simple JSON per-project.
+- [ ] Basic tests: verify gain mapping and routing.
+
+UX notes
+- Use a single row per track: name, mute, solo, volume slider, pan slider.
+- Volume slider: logarithmic feel; show dB and percent. ARIA labels for controls.
+- Visualizer: small canvas using AnalyserNode (optional).
+
+Simple mappings
+- Linear to perceptual (simple):
+    gain = value * value
+- dB mapping (recommended):
+    minDb = -60, maxDb = 0
+    dB = value * (maxDb - minDb) + minDb
+    gain = 10^(dB / 20)
+
+Minimal WebAudio init
+
+Misc:
+Being able to mute ticks
