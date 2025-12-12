@@ -1,4 +1,5 @@
 {
+  "globalDependencies": [".env"],
   "$schema": "https://turborepo.com/schema.json",
   "ui": "tui",
   "tasks": {
@@ -17,6 +18,5 @@
       "cache": false,
       "persistent": true
     }
-    
   }
 }
