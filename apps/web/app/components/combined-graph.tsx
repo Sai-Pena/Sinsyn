@@ -1,11 +1,11 @@
 "use client";
 import { useEffect, useRef } from "react";
 import { evaluate } from "mathjs";
-import type { SavedInstrument } from "../lib/instrument-store";
+import type { InstrumentConfig } from "../lib/instrument-store";
 import type { TimelineClipData } from "./timeline-clip";
 
 interface InstrumentWithClips {
-  instrument: SavedInstrument;
+  instrument: InstrumentConfig;
   clips: TimelineClipData[];
 }
 
@@ -77,7 +77,7 @@ export function CombinedGraph({
 
     instrumentsWithClips.forEach(({ instrument, clips }, index) => {
       const color =
-        instrument.color || GRAPH_COLORS[index % GRAPH_COLORS.length];
+        instrument.color ?? GRAPH_COLORS[index % GRAPH_COLORS.length];
 
       // Draw each clip's waveform at its position
       clips.forEach((clip) => {
