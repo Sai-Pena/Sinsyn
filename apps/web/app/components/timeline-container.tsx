@@ -100,8 +100,8 @@ const TimelineContainer: React.FC = () => {
     for (const inst of savedInstruments) {
       if (!instrumentPlayersRef.current.has(inst.id)) {
         const player = await Soundfont.instrument(
-          acRef.current,
-          inst.instrumentName
+          acRef.current!,
+          inst.instrumentName as any
         );
         instrumentPlayersRef.current.set(inst.id, player);
       }
@@ -374,8 +374,11 @@ const TimelineContainer: React.FC = () => {
             BPM: {bpm}
           </span>
           <Slider
-            value={[bpm]}
-            onValueChange={(values) => setBPM(values[0])}
+            value={[bpm ?? 120]}
+            onValueChange={(values) => {
+              const newBpm = values[0];
+              if (typeof newBpm === "number") setBPM(newBpm);
+            }}
             min={60}
             max={400}
             step={1}

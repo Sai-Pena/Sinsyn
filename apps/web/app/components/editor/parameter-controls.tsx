@@ -26,7 +26,7 @@ export function ParameterControls({
         <label className="text-sm font-medium">dX: {dX}</label>
         <Slider
           value={[dX]}
-          onValueChange={(values) => onDXChange(values[0])}
+          onValueChange={(values) => onDXChange(values?.[0] ?? dT)}
           min={1}
           max={50}
           step={1}
@@ -37,7 +37,7 @@ export function ParameterControls({
         <label className="text-sm font-medium">dT (ms): {dT}</label>
         <Slider
           value={[dT]}
-          onValueChange={(values) => onDTChange(values[0])}
+          onValueChange={(values) => onDTChange(values?.[0] ?? dT)}
           min={10}
           max={1000}
           step={10}
