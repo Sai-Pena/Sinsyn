@@ -21,7 +21,7 @@ export interface TimelineData {
   clips: TimelineClipData[];
 }
 
-interface InstrumentStore {
+export interface InstrumentStore {
   instruments: InstrumentConfig[];
   bpm: number;
   timelineData: TimelineData[];
