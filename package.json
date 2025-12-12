@@ -2,8 +2,7 @@
   "name": "sinsyn-turbo",
   "private": true,
   "scripts": {
-    
-    "build": "next build apps/web",
+    "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
