@@ -10,6 +10,14 @@ Run the following command:
 npx create-turbo@latest
 ```
 
+
+
+{{
+    New build: next build apps/web
+    Old build: turbo run build
+
+
+}}
 ## What's inside?
 
 This Turborepo includes the following packages/apps:
