@@ -170,7 +170,8 @@ export default function Home() {
       />
 
       <div style={{ padding: "20px", color: "#fff" }}>
-        <h1>Welcome to Sinesth</h1>
+        <h1>Welcome to SINsyn</h1>
+        <h6> Made by Sai Pena</h6>
         <p>Hover over the circle and click to start editing.</p>
       </div>
     </div>

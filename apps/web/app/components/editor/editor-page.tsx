@@ -220,7 +220,7 @@ export default function EditorPage() {
     <div className="min-h-screen bg-background p-8">
       <div className="max-w-4xl mx-auto space-y-6">
         <div className="flex items-center justify-between">
-          <h1 className="text-4xl font-bold">SINESTH Editor</h1>
+          <h1 className="text-4xl font-bold">SINsyn Editor</h1>
           <Link href="/timeline">
             <Button variant="outline">Back to Timeline</Button>
           </Link>
